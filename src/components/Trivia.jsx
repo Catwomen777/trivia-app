@@ -144,7 +144,7 @@ export default function TriviaApp() {
                   onClick={() => handleAnswerSelect(answer)}
                   disabled={showAnswer}
                   className={`block w-full text-left p-2 border rounded
-                    ${showAnswer && isCorrect ? 'bg-green-200' : ''}
+                    ${showAnswer && isCorrect ? 'bg-green-200 text black' : ''}
                     ${showAnswer && isSelected && !isCorrect ? 'bg-red-200' : ''}
                     ${!showAnswer ? 'hover:bg-gray-100' : ''}`}
                   dangerouslySetInnerHTML={{ __html: answer }}
